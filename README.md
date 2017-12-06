@@ -1,16 +1,23 @@
 # Menu fetcher
 
-## Currently implemented
+## Implémentés
 
-- [ ] Fetch the menu picture (as menu.jpg)
+- [x] Récupérer l'image du menu de la semaine (fichier `menu.jpg`)
 
-## To implement
+## À faire
 
-- [ ] Use OCR (tesseract) to read out the content of the picture
+- [ ] Utiliser un OCR (e.g. tesseract) pour lire le texte de l'image
 
-## Usage
+## Utilisation
 
-The script is implemented in `fish` but can easily be translated into bash or sh.
-It requires `curl`, `wget`, `grep` and `tail` (posix-compliant).
+Le script est implémenté en `fish`, mais est facilement portable à bash/sh.
 
-This script is meant to be run once or twice a day.
+Le script est fait pour être éxécuté une ou deux fois par jour, les résultats
+étant alors servis statiquement (via nginx ou autre) pour éviter de surcharger
+quoi que ce soit.
+
+## Dépendances
+
+- `grep` et `tail`
+- `wget` et `curl`
+- `fish`
