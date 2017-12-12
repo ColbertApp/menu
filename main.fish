@@ -8,3 +8,5 @@ tesseract menu.jpg res -l fra+osd
 sed -i -f replacements.sed res.txt
 
 ./parse.js > res.json
+
+firebase deploy --token (cat token.txt)
