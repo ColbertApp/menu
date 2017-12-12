@@ -7,4 +7,4 @@ wget $url -O menu.jpg
 tesseract menu.jpg res -l fra+osd
 sed -i -f replacements.sed res.txt
 
-set timespan ''
+./parse.js > res.json
