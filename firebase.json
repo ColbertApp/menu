@@ -5,7 +5,8 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "token.txt"
+      "token.txt",
+      "menu.jpg"
     ]
   }
 }
